@@ -1,0 +1,16 @@
+#include <Servo.h>
+Servo moter;
+void setup() {
+  pinMode(11, OUTPUT);
+  pinMode(8, INPUT_PULLUP);
+  pinMode(6, OUTPUT);
+  moter.attach(9);
+  Serial.begin(9600);
+}
+
+void loop() {
+  int button = analogRead(A0);
+  Serial.println(button);
+  analogWrite(11, map(button, 0, 1023, 0, 255));
+  moter.write(map(button, 0, 1023, 0, 180));
+}
