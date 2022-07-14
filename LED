@@ -1,0 +1,16 @@
+int R = 9;
+int G = 10;
+int B = 11;
+
+void setup() {
+  pinMode(R, OUTPUT);
+  pinMode(G, OUTPUT);
+  pinMode(B, OUTPUT);
+}
+
+void loop() {
+    for(int i = 225; i > 0; i--) { //i++는 i += 1이랑 같음
+      analogWrite(R, i);
+      delay(10);
+    }
+}
