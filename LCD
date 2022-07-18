@@ -18,3 +18,5 @@ void loop() {
   lcd.print("x 2");
   delay(5000);
 }
+
+// https://popcorn16.tistory.com/206 
