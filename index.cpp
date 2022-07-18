@@ -93,6 +93,7 @@ void loop()
     }
     lcd.setCursor(0, 1);
     lcd.print("x" + latte);
+    delay(2000);
      // 계산
     int ice_ame_prise = ice_ame * 3000;
     int latte_prise = latte * 4000;
