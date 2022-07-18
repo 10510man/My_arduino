@@ -99,7 +99,7 @@ void loop()
     int latte_prise = latte * 4000;
     lcd.setCursor(0, 0);
     lcd.print('ice ame:' + ice_ame + '=' + ice_ame_prise);
-    lcd.setCursor(0, 1;);
+    lcd.setCursor(0, 1);
     lcd.print('latte:' + latte + '=' + latte_prise);
     lcd.clear();
   }
@@ -110,7 +110,7 @@ void loop()
     delay(1000);
     lcd.setCursor(0, 0);
     lcd.print('please wait     ');
-    lcd.setCursor(0, 1)
+    lcd.setCursor(0, 1);
     lcd.print('person in charge');
     delay(1000);  // 카드 인증 실패 시 1초 대기
   }
