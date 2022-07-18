@@ -101,6 +101,7 @@ void loop()
     lcd.print('ice ame:' + ice_ame + '=' + ice_ame_prise);
     lcd.setCursor(0, 1);
     lcd.print('latte:' + latte + '=' + latte_prise);
+    delay(2000);
     lcd.clear();
   }
   else { // 인증 실패하면...  
