@@ -1,0 +1,19 @@
+#include <SoftwareSerial.h>
+SoftwareSerial BT(8, 7);
+int menu_select = 0;
+
+void setup() {
+  Serial.begin(9600);
+  BT.begin(9600);
+  BT.println("메뉴를 골라주세요");
+}
+
+void loop() {
+  if (BT.available()) {         //폰 <- BlueTooth, 휴대폰으로 조조
+    Serial.write(BT.read());
+    char menu_select = BT.read();
+  }
+  if (menu_select == 1) {     //폰 -> BlueTooth
+    Serial.print("Wa sans");
+  }
+}
